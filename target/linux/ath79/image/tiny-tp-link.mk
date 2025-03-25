@@ -533,3 +533,13 @@ define Device/tplink_tl-wr941n-v7-cn
   TPLINK_HWID := 0x09410007
 endef
 TARGET_DEVICES += tplink_tl-wr941n-v7-cn
+
+define Device/tplink_tl-wr840n-v2
+  $(Device/tplink-8mlzma)
+  SOC := qca9533
+  DEVICE_VENDOR := TP-Link
+  DEVICE_MODEL := TL-WR840N
+  DEVICE_VARIANT := v2
+  SUPPORTED_DEVICES := tl-wr840n-v2
+endef
+TARGET_DEVICES += tplink_tl-wr840n-v2
